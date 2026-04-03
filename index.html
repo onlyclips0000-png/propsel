@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Google</title>
+<style>
+body {text-align:center; margin-top:100px; font-family:Arial;}
+input {width:60%; padding:10px;}
+</style>
+</head>
+<body>
+
+<h1>Google</h1>
+<input id="search" placeholder="Search Google">
+<br><br>
+<button onclick="go()">Search</button>
+
+<script>
+function go(){
+ let val=document.getElementById("search").value;
+ if(val.toLowerCase().includes("best girl")){
+   window.location="result.html";
+ } else {
+   alert("Try: Best girl in the world");
+ }
+}
+</script>
+
+</body>
+</html>
